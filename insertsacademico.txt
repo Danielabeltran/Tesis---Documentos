@@ -1,0 +1,41 @@
+INSERT TABLA UNIVERSIDAD
+
+insert into universidad (id, nombre) values (1,"Salle");
+insert into universidad (id, nombre) values (2,"Distrital");
+insert into universidad (id, nombre) values (3,"Nacional");
+insert into universidad (id, nombre) values (4,"Sabana");
+
+INERT TABLA ACADEMICO
+
+insert into administrador (id, nombre, usuario, clave) values (1,"Jose", "jose1", 1234);
+insert into administrador (id, nombre, usuario, clave) values (2,"Maria", "maria1", 12345);
+insert into administrador (id, nombre, usuario, clave) values (3,"Pedro", "pedro1", 123456);
+insert into administrador (id, nombre, usuario, clave) values (4,"Juan", "juan1", 1234567);
+
+INSERT PROFESOR ACADEMICO
+
+insert into profesor (id, nombre, usuario, clave, email) values (12,"Jhon", "Jhon1", "1234", "jhon@hotmail.com");
+insert into profesor (id, nombre, usuario, clave, email) values (13,"Olga", "Olga1", "12345", "olga@hotmail.com");
+insert into profesor (id, nombre, usuario, clave, email) values (14,"Carlos", "Carlos1", "123456", "carlos@hotmail.com");
+insert into profesor (id, nombre, usuario, clave, email) values (15,"Marta", "Marta1", "1234567", "marta@hotmail.com");
+
+INSERT CURSO ACADEMICO
+
+insert into curso (id, id_Profesor, id_Universidad, asignatura, grupo, horario) values (1,12, 1, "Web", 1, "12-2");
+insert into curso (id, id_Profesor, id_Universidad, asignatura, grupo, horario) values (2,13, 2, "Matemáticas", 2, "12-2");
+insert into curso (id, id_Profesor, id_Universidad, asignatura, grupo, horario) values (3,14, 3, "Modelos", 3, "12-2");
+insert into curso (id, id_Profesor, id_Universidad, asignatura, grupo, horario) values (4,15, 4, "Calculo", 4, "12-2");
+
+INSERT ESTUDIANTE ACADEMICO
+
+insert into estudiante (id, id_Universidad, codigo, nombre, usuario, clave, email) values (1,1, 2000, "Jeison", "jeison1", 1234,"jeison@hotmail.com");
+insert into estudiante (id, id_Universidad, codigo, nombre, usuario, clave, email) values (2,2, 2001, "Maye", "maye1", 12345,"maye@hotmail.com");
+insert into estudiante (id, id_Universidad, codigo, nombre, usuario, clave, email) values (3,3, 2002, "Oscar", "oscar1", 123456,"oscar@hotmail.com");
+insert into estudiante (id, id_Universidad, codigo, nombre, usuario, clave, email) values (4,4, 2003, "Dani", "dani1", 1234567,"dani@hotmail.com");
+
+INSERT NOTA ACADEMICO
+
+insert into nota (id_Estudiante, id_Curso, corte1, corte2, corte3) values (1,1, 3.4,3.4,4.3 );
+insert into nota (id_Estudiante, id_Curso, corte1, corte2, corte3) values (2,2, 4.0,3.0,2.3 );
+insert into nota (id_Estudiante, id_Curso, corte1, corte2, corte3) values (3,3, 5.0,2.9,2.8 );
+insert into nota (id_Estudiante, id_Curso, corte1, corte2, corte3) values (4,4, 4.4,3.4,4.2 );
